@@ -38,6 +38,8 @@ namespace CarShop
 
             services.AddDbContext<CarShopContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("CarShopContext")));
+            // Added ICarRepo and Car service Injection
+            services.AddTransient<ICarRepository, CarService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
