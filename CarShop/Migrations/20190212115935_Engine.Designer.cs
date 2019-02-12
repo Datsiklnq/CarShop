@@ -4,14 +4,16 @@ using CarShop.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CarShop.Migrations
 {
     [DbContext(typeof(CarShopContext))]
-    partial class CarShopContextModelSnapshot : ModelSnapshot
+    [Migration("20190212115935_Engine")]
+    partial class Engine
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -75,22 +77,9 @@ namespace CarShop.Migrations
 
                     b.Property<int>("CarId");
 
-                    b.Property<int?>("CustomerId");
-
-                    b.Property<int>("CutomerId");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("CustomerId");
-
                     b.ToTable("Purchase");
-                });
-
-            modelBuilder.Entity("CarShop.Models.Purchase", b =>
-                {
-                    b.HasOne("CarShop.Models.Customer", "Customer")
-                        .WithMany()
-                        .HasForeignKey("CustomerId");
                 });
 #pragma warning restore 612, 618
         }

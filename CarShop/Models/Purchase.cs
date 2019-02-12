@@ -9,5 +9,8 @@ namespace CarShop.Models
     {
         public int CarId { get; set; }
         public int Id { get; set; }
+        public int CustomerId { get; set; }
+        
+             
     }
 }

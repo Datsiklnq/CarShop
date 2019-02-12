@@ -42,6 +42,8 @@ namespace CarShop
             services.AddTransient<ICarRepository, CarService>();
             //Added ICustomerRepo and Customer service Injection
             services.AddTransient<ICustomerRepository, CustomerService>();
+            //Added IpurchaseRepoSitory and PurchaseService Injection
+            services.AddTransient<IPurchaseRepository, PurchaseService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

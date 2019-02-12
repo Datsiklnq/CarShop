@@ -53,7 +53,7 @@ namespace CarShop.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Id,Brand,Model,Engine,Year,Price,ImageUrl")] Car car)
+        public IActionResult Create([Bind("Id,Brand,Model,Engine,Year,Price,Description,ImageUrl")] Car car)
         {
             if (ModelState.IsValid)
             {
