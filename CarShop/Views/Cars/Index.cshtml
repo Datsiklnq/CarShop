@@ -1,71 +1,29 @@
 ﻿@model IEnumerable<CarShop.Models.Car>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Home";
 }
 
-<h2>Index</h2>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Brand)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Model)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Engine)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Year)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ImageUrl)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Brand)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Model)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Engine)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Year)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.DisplayNameFor(model => model.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ImageUrl)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<h2>Welcome To the Super Car Shop</h2>
+<div class="container">
+    <div class=" car-list">
+        @foreach (var item in Model)
+        {
+            <a asp-action="Details" asp-route-id="@item.Id">
+                <div class="each-car">
+                    <h3>
+                        @Html.DisplayFor(modelItem => item.Brand)
+                    </h3>
+                    <p>
+                        @Html.DisplayFor(modelItem => item.Model)
+                    </p>
+                    <img src="~/img/@Html.DisplayFor(modelItem => item.ImageUrl)" alt="tasty pie" />
+                    <p>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </p>
+                </div>
+            </a>
+        }
+    </div>
+</div>

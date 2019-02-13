@@ -66,7 +66,7 @@ using CarShop.Models;
             WriteLiteral("\r\n<h2>Index</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(117, 37, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "565da95b732a43ae98ae5f2fd08a8dbd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c5a8f25039804d8cb3e6c6c274d35dd4", async() => {
                 BeginContext(140, 10, true);
                 WriteLiteral("Create New");
                 EndContext();
@@ -216,7 +216,7 @@ using CarShop.Models;
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(1541, 53, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f4bcfbe50a5b4b5dac2604a9f9c15bb7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e659b0a318274e8683f3e87a9bad46d3", async() => {
                 BeginContext(1586, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -251,7 +251,7 @@ using CarShop.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(1614, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e1a62fa206b64f7184b7cc3741f8d927", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "26c3e40b3879483b8434353ed1112c97", async() => {
                 BeginContext(1662, 7, true);
                 WriteLiteral("Details");
                 EndContext();
@@ -286,7 +286,7 @@ using CarShop.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(1693, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08bed6c4e4bc461db30fe15f1669a10f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f34ff363e7d2403192635645ff26e701", async() => {
                 BeginContext(1740, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\CarShop"
+    "\\CarShop",
+    "\\CarShop\\Controllers",
+    "\\CarShop\\Views",
+    "\\CarShop\\Views\\Shared"
   ],
   "SelectedNode": "\\CarShop.sln",
   "PreviewInSolutionExplorer": false
