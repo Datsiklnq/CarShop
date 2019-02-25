@@ -13,8 +13,9 @@ namespace CarShop.Models
         public string Model { get; set; }
         public double Engine { get; set; }
         public int Year { get; set; }
-        [DisplayFormat(DataFormatString = "{0:n} €")]
+        [DisplayFormat(DataFormatString = "€ {0:n} ")]
         public decimal Price { get; set; }
+       
         public string Description { get; set; }
         public string ImageUrl { get; set; }
     }
