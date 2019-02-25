@@ -45,3 +45,8 @@ C:\Users\tst11\Source\Repos\CarShop2\CarShop\obj\Debug\netcoreapp2.1\CarShop.Vie
 C:\Users\tst11\Source\Repos\CarShop2\CarShop\obj\Debug\netcoreapp2.1\CarShop.dll
 C:\Users\tst11\Source\Repos\CarShop2\CarShop\obj\Debug\netcoreapp2.1\CarShop.pdb
 C:\Users\tst11\Source\Repos\CarShop2\CarShop\obj\Debug\netcoreapp2.1\CarShop.csproj.CopyComplete
+C:\Users\tst11\Source\Repos\CarShop2\CarShop\obj\Debug\netcoreapp2.1\Razor\Views\Feedbacks\Create.g.cshtml.cs
+C:\Users\tst11\Source\Repos\CarShop2\CarShop\obj\Debug\netcoreapp2.1\Razor\Views\Feedbacks\Delete.g.cshtml.cs
+C:\Users\tst11\Source\Repos\CarShop2\CarShop\obj\Debug\netcoreapp2.1\Razor\Views\Feedbacks\Details.g.cshtml.cs
+C:\Users\tst11\Source\Repos\CarShop2\CarShop\obj\Debug\netcoreapp2.1\Razor\Views\Feedbacks\Edit.g.cshtml.cs
+C:\Users\tst11\Source\Repos\CarShop2\CarShop\obj\Debug\netcoreapp2.1\Razor\Views\Feedbacks\Index.g.cshtml.cs

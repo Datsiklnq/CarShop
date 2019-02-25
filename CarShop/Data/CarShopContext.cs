@@ -19,5 +19,7 @@ namespace CarShop.Models
         public DbSet<CarShop.Models.Customer> Customer { get; set; }
 
         public DbSet<CarShop.Models.Purchase> Purchase { get; set; }
+
+        public DbSet<CarShop.Models.Feedback> Feedback { get; set; }
     }
 }

@@ -1,11 +1,13 @@
 ﻿@model IEnumerable<CarShop.Models.Car>
 
+
 @{
     ViewData["Title"] = "Home";
 }
 
-
-<h2>Welcome To the Super Car Shop</h2>
+<div class="latestCars">
+    <h2>Latest Super Cars</h2>
+</div>
 <div class="container">
     <div class=" car-list">
         @foreach (var item in Model)
@@ -18,12 +20,17 @@
                     <p>
                         @Html.DisplayFor(modelItem => item.Model)
                     </p>
-                    <img src="~/img/@Html.DisplayFor(modelItem => item.ImageUrl)" alt="tasty pie" />
+
+                    <img src="@Url.Content(item.ImageUrl)" alt="url image" />
                     <p>
+
                         @Html.DisplayFor(modelItem => item.Price)
                     </p>
                 </div>
             </a>
         }
+
     </div>
 </div>
+
+
