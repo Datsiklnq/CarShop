@@ -50,3 +50,5 @@ C:\Users\tst11\Source\Repos\CarShop2\CarShop\obj\Debug\netcoreapp2.1\Razor\Views
 C:\Users\tst11\Source\Repos\CarShop2\CarShop\obj\Debug\netcoreapp2.1\Razor\Views\Feedbacks\Details.g.cshtml.cs
 C:\Users\tst11\Source\Repos\CarShop2\CarShop\obj\Debug\netcoreapp2.1\Razor\Views\Feedbacks\Edit.g.cshtml.cs
 C:\Users\tst11\Source\Repos\CarShop2\CarShop\obj\Debug\netcoreapp2.1\Razor\Views\Feedbacks\Index.g.cshtml.cs
+C:\Users\tst11\Source\Repos\CarShop2\CarShop\obj\Debug\netcoreapp2.1\Razor\Views\Accounts\Login.g.cshtml.cs
+C:\Users\tst11\Source\Repos\CarShop2\CarShop\obj\Debug\netcoreapp2.1\Razor\Views\Accounts\Register.g.cshtml.cs

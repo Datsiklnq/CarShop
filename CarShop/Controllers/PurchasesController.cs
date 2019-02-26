@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CarShop.Models;
 using CarShop.ModelViews;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CarShop.Controllers
 {
+    [Authorize]
     public class PurchasesController : Controller
     {
         private readonly IPurchaseRepository _purchaseRepository;

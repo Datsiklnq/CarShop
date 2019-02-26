@@ -39,7 +39,6 @@ namespace CarShop
             {
                 options.Password.RequireDigit = true;
                 options.Password.RequireNonAlphanumeric = true;
-                options.User.RequireUniqueEmail = true;
                 options.Password.RequiredLength = 8;
 
             });

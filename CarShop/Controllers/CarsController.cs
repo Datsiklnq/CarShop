@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CarShop.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CarShop.Controllers
 {
@@ -43,6 +44,7 @@ namespace CarShop.Controllers
         }
 
         // GET: Cars/Create
+       
         public IActionResult Create()
         {
             return View();
