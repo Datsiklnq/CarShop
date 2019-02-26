@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using CarShop.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace CarShop
 {
@@ -31,6 +32,16 @@ namespace CarShop
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
+                
+
+            });
+            services.Configure<IdentityOptions>(options =>
+            {
+                options.Password.RequireDigit = true;
+                options.Password.RequireNonAlphanumeric = true;
+                options.User.RequireUniqueEmail = true;
+                options.Password.RequiredLength = 8;
+
             });
 
 
@@ -46,6 +57,8 @@ namespace CarShop
             services.AddTransient<IPurchaseRepository, PurchaseService>();
             //Added Ifeedbackrepo and feedback service injection
             services.AddTransient<IFeedbackRepository, FeedbackService>();
+            services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<CarShopContext>();
+            services.ConfigureApplicationCookie(options => options.LoginPath = "/");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -64,7 +77,7 @@ namespace CarShop
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
-
+            app.UseAuthentication();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

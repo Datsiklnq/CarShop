@@ -4,10 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using CarShop.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace CarShop.Models
 {
-    public class CarShopContext : DbContext
+    public class CarShopContext : IdentityDbContext<IdentityUser>
     {
         public CarShopContext (DbContextOptions<CarShopContext> options)
             : base(options)
@@ -21,5 +23,6 @@ namespace CarShop.Models
         public DbSet<CarShop.Models.Purchase> Purchase { get; set; }
 
         public DbSet<CarShop.Models.Feedback> Feedback { get; set; }
+
     }
 }
